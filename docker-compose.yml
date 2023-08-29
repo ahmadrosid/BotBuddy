@@ -1,4 +1,4 @@
-version: '3'
+version: "3"
 services:
   backend-server:
     restart: unless-stopped
@@ -39,7 +39,7 @@ services:
   llm-server:
     restart: unless-stopped
     # prebuilt image for linux
-    # image: codebanesr/openchat_llm_server:edge
+    image: codebanesr/openchat_llm_server:edge
 
     # prebuilt image for mac
     # image: codebanesr/openchat_llm_server:edge_amd64
@@ -90,7 +90,6 @@ services:
       - "6379:6379"
     networks:
       - openchat_network
-
 
 networks:
   openchat_network:
