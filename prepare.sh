@@ -1,7 +1,4 @@
 #!/bin/bash
-
-git clone https://github.com/ahmadrosid/BotBuddy.git
-cd BotBuddy/
 sudo apt update
 sudo apt install apt-transport-https ca-certificates curl software-properties-common -y
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
